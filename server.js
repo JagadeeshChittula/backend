@@ -55,7 +55,7 @@ mangoose.connect("mongodb+srv://Jagadeeshkumar:Jagadeeshkumar@cluster0.sdsn0sa.m
 
 // CRUD operations  create 
 
-app.post("/",async(req,res)=>{
+app.post("/students/add",async(req,res)=>{
     try {
         const user = new User(req.body);
 
@@ -72,7 +72,7 @@ app.post("/",async(req,res)=>{
 })
 
 //to read data from the database
-app.get("/students",async(req,res)=>{
+app.get("/",async(req,res)=>{
     try {
         const user = await User.find();
         res.send(user);
