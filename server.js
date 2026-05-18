@@ -54,7 +54,7 @@ mangoose.connect("mongodb+srv://Jagadeeshkumar:Jagadeeshkumar@cluster0.sdsn0sa.m
 
 // CRUD operations  create 
 
-app.post("/students/add",async(req,res)=>{
+app.post("/",async(req,res)=>{
     try {
         const user = new User(req.body);
 
