@@ -7,10 +7,10 @@ const userSchema = new mangoose.Schema({
         type: String,
        
     }, 
-    // age: {
-    //     type: Number,
+    age: {
+        type: Number,
         
-    // },
+    },
     email:{
         type: String,
         
